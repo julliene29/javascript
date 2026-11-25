@@ -1,30 +1,19 @@
 
-const readline = require("readline");
+        function Calculation() {
 
-const a = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+            let num1 =  Number(document.getElementById(num1).value);
+            let num2 = Number(document.getElementById(num2).value);
 
-a.question("Enter number 1: ", function(num1) {
-    a.question("Enter number 2: ", function(num2) {
+            let sum = num1 + num2;
+            let difference = num1 - num2;
+            let product = num1 * num2;
+            let division = num1 / num2;
 
-        num1 = Number(num1);
-        num2 = Number(num2);
+       Document.getElementById("result").innerHTML =
 
-        function Calculation(num1, num2) {
-
-            console.log("Sum: " + (num1 + num2));
-
-            console.log("Difference: " + (num1 - num2));
-
-            console.log("Product: " + (num1 * num2));
-
-            console.log("Division: " + (num1 / num2));
+        "Sum: " + sum + "<br>" +
+        "Difference: " + difference + "<br>" +
+        "Product: " + product + "<br>" +
+        "Division: " + division;
+        
         }
-
-        Calculation(num1, num2);
-
-        a.close();
-    });
-});
