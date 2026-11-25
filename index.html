@@ -1,15 +1,25 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Java Script Learning</title>
-    </head>
-    <body>
-        <h1>Welcome to my website on Javascript</h1>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <script>
-            console.log("hello javascript");
+    <div class="calculator">
 
-           
-        </script>
-    </body>
+        <input type="number" id="num1" placeholder="Enter number 1">
+
+        <input type="number" id="num2" placeholder="Enter number 2">
+
+        <button onclick="Calculation()">Calculate</button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="Calculations.js"></script>
+
+</body>
 </html>
