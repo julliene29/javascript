@@ -1,4 +1,13 @@
 
+        function toggleForm(){
+            let form =document.getElementElementById("calculationForm");
+            if(form.calssList.contains("hidden")){
+                form.classList.remove("hidden");
+            }
+            else{
+                form.classList.add("hidden");
+            }
+        }
         function Calculation() {
 
             let num1 =  Number(document.getElementById("num1").value);
