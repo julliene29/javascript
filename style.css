@@ -3,6 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #eaf2ff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -35,14 +36,23 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 15px;
 }
 
 button:hover {
     background-color: #1d4ed8;
 }
 
+#toggleBtn {
+    width: 200px;
+}
+
 #result {
     margin-top: 20px;
     line-height: 2;
     color: #333;
+}
+
+.hidden {
+    display: none;
 }

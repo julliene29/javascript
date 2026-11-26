@@ -1,7 +1,7 @@
 
         function toggleForm(){
-            let form =document.getElementElementById("calculationForm");
-            if(form.calssList.contains("hidden")){
+            let form =document.getElementById("calculationForm");
+            if(form.classList.contains("hidden")){
                 form.classList.remove("hidden");
             }
             else{
