@@ -1,12 +1,7 @@
 
         function toggleForm(){
             let form =document.getElementById("calculationForm");
-            if(form.classList.contains("hidden")){
-                form.classList.remove("hidden");
-            }
-            else{
-                form.classList.add("hidden");
-            }
+            form.classList.toggle("hidden");
         }
         function Calculation() {
 
