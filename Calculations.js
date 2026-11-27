@@ -1,28 +1,31 @@
 
-        function toggleForm(){
-            let form =document.getElementById("calculationForm");
-            form.classList.toggle("hidden");
-        }
-        function toggleOperators{
-            let buttons = doccument.getElementById("operatorButton");
-            buttons.classList.toggle("hidden");
-        }
-        function checkNumbers() {
+function toggleForm() {
+    let form = document.getElementById("calculationForm");
+    form.classList.toggle("hidden");
+}
 
-            let num1 =  Number(document.getElementById("num1").value);
-            let num2 = Number(document.getElementById("num2").value);
+function toggleOperators() {
+    let buttons = document.getElementById("operatorButtons");
+    buttons.classList.toggle("hidden");
+}
 
-            let buttons = DocumentFragment.querySelectorAll("#opetorButtons button");
+function checkNumbers() {
 
-            buttons.forEach(function(button){
-             button.disable = (num1 === "" || num2 === "");   
-            });
-        }
-        document.getElementById("num1").addEventListener("input", checkNumbers);
+    let num1 = document.getElementById("num1").value;
+    let num2 = document.getElementById("num2").value;
 
-        document.getElementById("num2").addEventListener("input", checkNumbers);
+    let buttons = document.querySelectorAll("#operatorButtons button");
 
-        function calculate(operator) {
+    buttons.forEach(function(button) {
+        button.disabled = (num1 === "" || num2 === "");
+    });
+}
+
+document.getElementById("num1").addEventListener("input", checkNumbers);
+
+document.getElementById("num2").addEventListener("input", checkNumbers);
+
+function calculate(operator) {
 
     let num1 = Number(document.getElementById("num1").value);
     let num2 = Number(document.getElementById("num2").value);
@@ -50,4 +53,3 @@
 
     document.getElementById("result").innerHTML = "Result: " + result;
 }
-             

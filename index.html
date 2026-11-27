@@ -10,23 +10,21 @@
     <button id="toggleBtn" onclick="toggleForm()">Show / Hide Form</button>
     <div class="calculator-form" id="calculationForm">
 
-        <input type="number" id="num1" placeholder="Enter number 1"><br>
+        <input type="number" id="num1" placeholder="Enter number 1">
 
-        <input type="number" id="num2" placeholder="Enter number 2"><br>
-
-
+        <input type="number" id="num2" placeholder="Enter number 2">
         <button onclick="toggleOperators()">Operators</button>
-        <div id="operatorButtons" class="operatpr-buttons">
-        <button id="addBtn" onclick="calculate('+')" disable>add(+)</button>
-        <button id="subtractBtn" onclick="calculate('-')" disable>substract(-)</button>
-        <button id="multiplyBtn" onclick="calculate('*')" disable>multiply(*)</button>
-        <button id="divisionBtn" onclick="calculate('/')" disable>division(/)</button>
+        <div id="operatorButtons" class="operator-buttons">
+            <button onclick="calculate('+')" disabled>Add (+)</button>
+            <button onclick="calculate('-')" disabled>Subtract (-)</button>
+            <button onclick="calculate('*')" disabled>Multiply (*)</button>
+            <button onclick="calculate('/')" disabled>Divide (÷)</button>
         </div>
         <div id="result"></div>
 
     </div>
 
-   <script src="Calculations.js"></script>
+    <script src="Calculations.js"></script>
 
 </body>
 </html>
