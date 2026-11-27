@@ -56,3 +56,18 @@ button:hover {
 .hidden {
     display: none;
 }
+
+.hidden {
+    display: none;
+}
+
+.operators {
+    margin-top: 15px;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+

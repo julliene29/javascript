@@ -14,8 +14,14 @@
 
         <input type="number" id="num2" placeholder="Enter number 2"><br>
 
-        <button onclick="Calculation()">Calculate</button>
 
+        <button onclick="toggleOperators()">Operators</button>
+        <div id="operatorButtons" class="operatpr-buttons">
+        <button id="addBtn" onclick="calculate('+')" disable>add(+)</button>
+        <button id="subtractBtn" onclick="calculate('-')" disable>substract(-)</button>
+        <button id="multiplyBtn" onclick="calculate('*')" disable>multiply(*)</button>
+        <button id="divisionBtn" onclick="calculate('/')" disable>division(/)</button>
+        </div>
         <div id="result"></div>
 
     </div>
